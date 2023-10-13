@@ -1,0 +1,102 @@
+/*iniciales*/
+
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Color1: black;
+    --Color2: gray;
+    --Color3: white;
+    --Color4: blue;
+    --Color5: red;
+    --Color6: yellow;
+    --Color7: darkred;
+    --Color8: goldenrod;
+    --color9: darkslategray;
+  
+  }
+  
+  /*reservadas*/
+  
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--Color2);
+  }
+  
+h1{
+  color: var(--Color4);
+  font-size: 20px;
+}  
+
+
+
+/*estilos*/
+
+.caja{
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--Color3);
+  text-align: center;
+  border-radius: 40px;
+}
+
+.caja input[type="text"]{
+    border: 2px solid var(--Color5);
+    background-color: var(--Color6);
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: var(--Color7);
+    border-radius: 30px;
+    transition: 0.25s;
+}
+
+.caja input[type="text"]:focus{
+  width: 280px;
+  border-color: var(--Color8);
+  background-color: var(--color9);
+  color: var(--Color3);
+}
+
+
+
+.caja input[type="submit"]{
+  border: 2px solid var(--Color4);
+  background-color: var(--Color5);
+  width: 100px;
+  outline: none;
+  color: var(--Color6);
+  border-radius: 30px;
+  transition: 0.25s;
+  margin: 20px auto;
+  padding: 10px 30px;
+}
+
+.caja input[type="submit"]:hover{
+width: 110px;
+border-color: var(--Color7);
+background-color: var(--Color8);
+color: var(--Color9);
+cursor: pointer;
+}
+
+.caja output[type="number"]{
+  width: 100px;
+  outline: none;
+  color: var(--Color7);
+  font-size: 30px;
+  border-radius: 30px;
+  transition: 0.25s;
+  margin: 20px auto;
+  padding: 10px 30px;
+  display: block;
+}
